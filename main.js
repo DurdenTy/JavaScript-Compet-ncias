@@ -57,11 +57,75 @@ do{
 }while(k < 5);*/
 
 
-var d = new Date();
+/*var d = new Date();
 
 alert(d.getHours());
 alert(d.getMinutes());
 alert(d.getSeconds());
 alert(d.getMonth() + 1);
 alert(d.getYear());
-alert(d);
+alert(d);*/
+
+/*function raiz(n1){
+	return n1 * n1;
+}
+
+function trocar(frase, palavra, palavra2){
+	return frase.replace(palavra, palavra2);
+}
+
+alert(raiz(8));
+alert(trocar("Algum teste", "teste", "conhecimento"));*/
+
+/*var permitido;
+function permitir(idade){
+	if(idade >=18 ){
+		permitido = true;
+	}else{
+		permitido = false;
+	}
+	return permitido;
+}
+
+var idade2 = prompt("Qual a sua idade?");
+
+permitir(idade2)
+console.log(permitido);*/
+
+alert("Não clique no botão, por nada no mundo, mesmo que alguem te peça");
+
+
+function clicar(){
+	document.getElementById("Clicou").innerHTML = "Não era para clicar";
+}
+
+function clicar2(){
+	document.getElementById("Clicou2").innerHTML = "Não poderá fazer novamente, melhor evitar essa vez";
+}
+
+function clicar3(){
+	document.getElementById("Clicou3").innerHTML = "Você acabou de destruir uma galaxia inteira... Por que não seguiu as ordens?... Por que?...";
+}
+
+function ver(){
+	window.open("https://ciberia.com.br/um-monstruoso-buraco-negro-foi-arrancado-para-fora-do-centro-de-sua-galaxia-por-uma-bizarra-colisao-cosmica-13984");
+}
+
+function passar(){
+	document.getElementById("galaxia").innerHTML = "Destruidas";
+}
+
+function tirar(){
+	document.getElementById("galaxia").innerHTML = "Verá o que causou";
+}
+
+function mudar(element){
+
+	if(element.value == 1){
+		alert("Você quer refazer tudo, excelente!");
+	}else{
+		alert("Quer deixar como está? As vidas perdidas...");
+	}
+
+}
+
