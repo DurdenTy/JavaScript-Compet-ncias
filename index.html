@@ -10,5 +10,22 @@
 </head>
 <body>
 	<h1>Bem-vindo ao DOOOOOOOM</h1>
+
+	<button type = "button" onclick="clicar()">Não Clique aqui</button>
+	<h3 id ="Clicou"></h3>
+	<button type = "button"  onclick="clicar2()">Não Clique aqui novamente, segunda chance</button>
+	<h3 id="Clicou2"></h3>
+	<button type = "button"  onclick="clicar3()">Não Clique aqui novamente, estou avisando, sua útilma chance</button>
+	<h3 id="Clicou3"></h3>
+
+	<button type="button" onclick="ver()" >Veja o que você causou</button>
+	<p id = "galaxia" onmouseover = "passar()" onmouseout = "tirar()">Milhares de vidas</p>
+
+	<select onchange="mudar(this)">
+		<option value="0"></option>
+		<option value="1">Refazer tudo?</option>
+		<option value="2">Deixar como está?</option>
+	</select>
+
 </body>
 </html>
