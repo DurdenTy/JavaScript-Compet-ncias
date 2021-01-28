@@ -1,0 +1,36 @@
+function mutation(arr) {
+
+  let count = 0;
+  let diferente = 0;
+  arr[1] = arr[1].toLowerCase();
+  arr[0] = arr[0].toLowerCase();
+  let array = arr[1];
+  let array2 = "";
+  array = array.split("");
+  for(let i = 0; i < arr[0].length; i++){
+    array2 += arr[0][i];
+  }
+   array2 = array2.split("");
+
+  for(let i = 0; i < array2.length; i++){
+    for(let u = 0; u < array.length + 1; u++){
+      if(array2[i] === array[u]){
+        count++;
+      }
+    }
+  }
+  
+  for(let i = 0; i < array2.length + 1; i++){
+    if(array2[i] == array[0]){
+      diferente++;
+    }  
+  }
+  console.log(diferente); 
+  if(count >= array.length && diferente > 0){
+    return true;
+  }else{
+    return false;
+  }  
+}
+
+mutation(["Alien", "asd"]);
