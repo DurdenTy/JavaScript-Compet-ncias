@@ -11,13 +11,8 @@ const somatorioX25 = (n) => {
         somatorio += somatorio[0 + u]/u;
         i--;
         u++;
-    }
-      for(var k = 1; k <= u; k++){
-        
-      }
-      
+    } 
     return somatorio;
-
   }
 
 console.log(somatorioX25(5));
